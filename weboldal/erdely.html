@@ -7,6 +7,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2, h3 {
+  color: #003366;
+}
+
+section {
+  margin-top: 80px;
+}
+
+.navbar {
+  background-color: #003366;
+}
+    </style>
   </head>
   <body>
     <main>
@@ -28,12 +50,12 @@
                       <a class="nav-link" aria-current="page" href="./index.html">Főoldal</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./martyrsofArad.html">The Martyrs of Arad</a>                    </li>
+                      <a class="nav-link" aria-current="page" href="./martyrsofArad.html">The Martyrs of Arad</a>                    </li>
                     <li class="nav-item">
                       <a class="nav-link" href="./cockard.html">Cockard</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Influential important person
                       </a>
                       <ul class="dropdown-menu">
@@ -55,7 +77,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Cities, towns, important places
                         </a>
                         <ul class="dropdown-menu">
@@ -88,7 +110,32 @@
           </nav>
     </main>
 
+    <section class="container mt-5 pt-5">
+      <div class="row">
+        <!-- Kép bal oldalon -->
+        <div class="col-md-4">
+          <img src="./kepek/1412b.jpg" alt="Erdély hadjáratok" class="img-fluid">
+        </div>
+        <!-- Szöveg jobb oldalon -->
+        <div class="col-md-8">
+          <h2>Erdély 1848/49-es szabadságharcban való szerepe</h2>
+          <p>
+            Az 1848–49-es magyar szabadságharcban Erdély kulcsfontosságú szerepet játszott. A hadjáratok a magyar forradalom és szabadságharc egyik legfontosabb helyszínei voltak. A szabadságharc eseményei Erdélyben is komoly hatást gyakoroltak, különösen a Habsburg Birodalom ellenállása és a román és magyar etnikai feszültségek miatt.
+          </p>
 
+          <p>
+            A magyar szabadságharc során az erdélyi hadjáratok során a magyar csapatok a román, osztrák és orosz csapatokkal harcoltak. Az erdélyi hadszíntér a székely és magyar milíciák számára is kiemelt szerepet jelentett. Az 1849-es világozi csata és az erdélyi hadjáratok vége kulcsfontosságú volt a szabadságharc sorsának alakulásában.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <h3>Hadjáratok Erdélyben</h3>
+        <p>
+          Az 1848–49-es szabadságharc során több fontos hadjárat zajlott Erdélyben, amelyek a magyar csapatok és az ellenséges haderők között folytak. A legkiemelkedőbbek közé tartozik a Kápolnai csata, a székely hadjárat és a világosi döntő csata. A hadjáratok során több fontos város és erőd megvédésére került sor, amelyek hosszú hónapokon keresztül meghatározták az erdélyi küzdelmek alakulását.
+        </p>
+      </div>
+    </section>
 
 
 
