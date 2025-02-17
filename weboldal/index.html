@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
     <style>
       body {
-        background-image: url('./kepek/niga.jpg');
+        background-image: url("./kepek/newspaperbg.webp");
         background-size: cover;
         font-family: 'Georgia', serif;
         color: #fff;
@@ -33,11 +33,12 @@
       }
       .news-card {
         margin-top: 20px;
-        border: 1px solid #ddd;
+        border: 8px double #8b5a2b;
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         background-color: #fff;
+        
       }
       .news-card img {
         width: 100%;
@@ -46,6 +47,7 @@
       }
       .news-card .card-body {
         padding: 15px;
+        height: 270px;
       }
       .news-card .card-title {
         font-size: 1.25rem;
@@ -67,7 +69,7 @@
         background-color: #58391c;
       }
       .container {
-        padding-top: 120px;
+        padding-top: 30px;
       }
       .row {
         margin-top: 30px;
@@ -82,6 +84,60 @@
         min-width: 300px;
         max-width: 32%; 
       }
+      .hero-section h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px black,  
+                -2px -2px 4px black, 
+                2px -2px 4px black,  
+                -2px 2px 4px black;;
+      }
+      .flag {
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          width: 90px;
+          display: flex;
+          border: black 3px solid;
+      }
+
+      .left-flag {
+          left: 0;
+      }
+
+      .right-flag {
+          right: 0;
+      }
+
+      .stripe {
+          height: 100%;
+          width: 33.33%;
+      }
+
+      .red {
+          background-color: rgb(177, 9, 9);
+      }
+
+      .white {
+          background-color: white;
+      }
+
+      .green {
+          background-color: rgb(18, 88, 18);
+      }
+      .generate-new{
+        margin-top: 20px;
+        text-align: center;
+      }
+      .gradient-text {
+            font-size: 4rem;
+            font-weight: bold;
+            background-image: linear-gradient(to right, red, white, green); /* Hungarian flag gradient */
+            -webkit-background-clip: text; /* Safari */
+            background-clip: text; /* For modern browsers */
+            color: transparent; /* Make text color transparent so gradient is visible */
+        }
     </style>
   </head>
   <body>
@@ -138,11 +194,15 @@
 
       <section class="hero-section">
         <div class="container">
-          <h1>HUNGARIAN SPRING</h1>
+          <h1 class="outline gradient-text">HUNGARIAN SPRING</h1>
           <p>EVERY WEEK NEW INFORMATON ABOUT OUR FIGHT FOR LIBERTY</p>
         </div>
       </section>
-
+      <div class="flag left-flag">
+        <div class="stripe red"></div>  
+        <div class="stripe white"></div>
+        <div class="stripe green"></div>
+    </div>
       <div class="container">
         <div class="row">
          
@@ -151,10 +211,10 @@
 
               <div class="news-card-container">
                 <div class="card news-card">
-                  <img src="./kepek/bathyan-hal.jpg" class="card-img-top" alt="Revolutionary Event">
+                  <img src="./kepek/bathyan-hal.jpg" class="card-img-top" alt="Batthyány jejbe lövik">
                   <div class="card-body">
                     <h5 class="card-title">THE PRIME MINISTER HAS BEEN EXCETUTED!</h5>
-                    <p class="card-text">When we are writing this prime minsiter  <strong>Lajos Batthyány.</strong> has been captured, and excetued by the oprresing Habsburgs we must mourn as a nation, and in our hearts cointninue the fight that he led.</p>
+                    <p class="card-text">When we are writing this prime minsiter  <strong>Lajos Batthyány.</strong> has been captured, and excetued by the Habsburgs we must mourn as a nation, and in our hearts continue the fight that he led.</p>
                     <a href="#" class="btn btn-primary">Read More</a>
                   </div>
                 </div>
@@ -163,11 +223,11 @@
 
               <div class="news-card-container">
                 <div class="card news-card">
-                  <img src="./kepek/aradfoter1849.webp" class="card-img-top" alt="Petőfi Sándor">
+                  <img src="./kepek/aradfoter1849.webp" class="card-img-top" alt="Arad">
                   <div class="card-body">
                     <h5 class="card-title">BLOODFIELD IN ARAD!</h5>
                     <p class="card-text">In the city of Arad, our great generals has been hanged for treason, thire secreice and leading shall inspire us to never give up. We will remember them as the heroes who gave up there life for every hungarian, and in there honour we must mourn.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="martyrsofArad.html" class="btn btn-primary">Read More</a>
                   </div>
                 </div>
               </div>
@@ -175,18 +235,27 @@
 
               <div class="news-card-container">
                 <div class="card news-card">
-                  <img src="./kepek/kossuth-usanyali.jpg" class="card-img-top" alt="The March of the Revolutionaries">
+                  <img src="./kepek/kossuth-usanyali.jpg" class="card-img-top" alt="Kossuth El">
                   <div class="card-body">
                     <h5 class="card-title">KOSSUTH FLED THE COUNTRY</h5>
-                    <p class="card-text">The great <strong>Kossuth Lajos</strong>  has seccesfly escaped the hands of the tyrnt Haynau and now he is in the US to get internation support for the hungarian casue, we must support him and prepre our selfs for the countuaton of this war.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <p class="card-text">The great <strong>Kossuth Lajos</strong>  has seccesfly escaped the hands of the tyrnt Haynau and now he is in the US to get international support for the hungarian casue, we must support him and prepre our selfs for the countuaton of this war.</p>
+                    <a href="kossuthlajos.html" class="btn btn-primary">Read More</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="generate-new">
+          <a onclick="more_News()" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Generate More News</a>
+        </div>
+
       </div>
+      <div class="flag right-flag">
+        <div class="stripe red"></div>
+        <div class="stripe white"></div>
+        <div class="stripe green"></div>
+    </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
