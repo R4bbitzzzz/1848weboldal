@@ -88,35 +88,71 @@
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Hungarian Revolution of 1848</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NEWS</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Főoldal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./martyrsofArad.html">The Martyrs of Arad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cockard.html">Cockard</a>
-                        </li>
-                        <!-- Add other menu items as needed -->
-                    </ul>
-                </div>
+          <a class="navbar-brand" href="#">Hungarian Revolution of 1848</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NEWS</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </div>
-    </nav>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown"></li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html">Főoldal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./martyrsofArad.html">The Martyrs of Arad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./cockard.html">Cockard</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Influential important person
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" id="kossuthlajos-1" href="./kossuthlajos.html">Kossuth Lajos</a></li>
+                    <li><a class="dropdown-item" href="./deakferenc.html">Deák Ferenc</a></li>
+                    <li><a class="dropdown-item" href="./szechenyi.html"> gróf Széchenyi István</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    
+                    <li><a class="dropdown-item" href="./petofi.html">Petőfi Sándor</a></li>
+                    <li><a class="dropdown-item" href="./aranyJ.html">Arany János</a></li>
+                    <li><a class="dropdown-item" href="./kolcsey.html">Kölcsey Ferenc</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./turulpeter.html"> Turul Péter</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cities, towns, important places
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./budapest.html">Buda and Pest</a></li>
+                      <li><a class="dropdown-item" href="./pozsony.html">Pozsony</a></li>
+                      <li><a class="dropdown-item" href="./erdely.html">Erdély</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      
+                      <li><a class="dropdown-item" href="./vilagos.html">Világos</a></li>
+                      <li><a class="dropdown-item" href="./gyongyos.html">Gyöngyös</a></li>
+                      <li><a class="dropdown-item" href="./eger.html">Eger</a></li>
+                    </ul>
+                  </li>
+              </ul>
+</div></div></div></nav>
+
 
     <!-- Flags on sides -->
     <div class="flag left-flag">
