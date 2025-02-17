@@ -5,7 +5,7 @@ This project is very cool, because it has information about the long lost legend
 
 ## Creators
 
-| Name             | ability                                                                |
+| Name              | Ability                                                            |
 | ----------------- | ------------------------------------------------------------------ |
 | nmmiklos1 | Exceptionally retarded |
 | PopecHerceg | Hasn't showered for weeks |
