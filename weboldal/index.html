@@ -10,95 +10,185 @@
     <style>
       body {
         background-image: url('./kepek/niga.jpg');
+        background-size: cover;
+        font-family: 'Georgia', serif;
+        color: #fff;
       }
-      </style>
+      .hero-section {
+        text-align: center;
+        padding: 80px 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+      }
+      .hero-section h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .hero-section p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+      .news-card {
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+      .news-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .news-card .card-body {
+        padding: 15px;
+      }
+      .news-card .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+      }
+      .news-card .card-text {
+        font-size: 1rem;
+        color: #555;
+      }
+      .news-card .btn-primary {
+        background-color: #8b5a2b;
+        border: none;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .news-card .btn-primary:hover {
+        background-color: #58391c;
+      }
+      .container {
+        padding-top: 120px;
+      }
+      .row {
+        margin-top: 30px;
+      }
+      .news-cards-container {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+      }
+      .news-card-container {
+        flex: 1;
+        min-width: 300px;
+        max-width: 32%; 
+      }
+    </style>
   </head>
   <body>
     <main>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Hungarian Revolution of 1848</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NEWS</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item dropdown"></li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./index.html">Főoldal</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./martyrsofArad.html">The Martyrs of Arad</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./cockard.html">Cockard</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Influential important person
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./kossuthlajos.html">Kossuth Lajos</a></li>
-                        <li><a class="dropdown-item" href="./deakferenc.html">Deák Ferenc</a></li>
-                        <li><a class="dropdown-item" href="./szechenyi.html"> gróf Széchenyi István</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="./petofi.html">Petőfi Sándor</a></li>
-                        <li><a class="dropdown-item" href="./aranyJ.html">Arany János</a></li>
-                        <li><a class="dropdown-item" href="./kolcsey.html">Kölcsey Ferenc</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="./turulpeter.html"> Turul Péter</a></li>
-                      </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Cities, towns, important places
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="./budapest.html">Buda and Pest</a></li>
-                          <li><a class="dropdown-item" href="./pozsony.html">Pozsony</a></li>
-                          <li><a class="dropdown-item" href="./erdely.html">Erdély</a></li>
-                          <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          
-                          <li><a class="dropdown-item" href="./vilagos.html">Világos</a></li>
-                          <li><a class="dropdown-item" href="./gyongyos.html">Gyöngyös</a></li>
-                          <li><a class="dropdown-item" href="./eger.html">Eger</a></li>
-                        </ul>
-                      </li>
+      
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hungarian Revolution of 1848</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NEWS</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link active" href="./index.html">Főoldal</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./martyrsofArad.html">The Martyrs of Arad</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cockard.html">Cockard</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Influential Important Person</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./kossuthlajos.html">Kossuth Lajos</a></li>
+                    <li><a class="dropdown-item" href="./deakferenc.html">Deák Ferenc</a></li>
+                    <li><a class="dropdown-item" href="./szechenyi.html">Gróf Széchenyi István</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./petofi.html">Petőfi Sándor</a></li>
+                    <li><a class="dropdown-item" href="./aranyJ.html">Arany János</a></li>
+                    <li><a class="dropdown-item" href="./kolcsey.html">Kölcsey Ferenc</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./turulpeter.html">Turul Péter</a></li>
                   </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cities, Towns, Important Places</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./budapest.html">Buda and Pest</a></li>
+                    <li><a class="dropdown-item" href="./pozsony.html">Pozsony</a></li>
+                    <li><a class="dropdown-item" href="./erdely.html">Erdély</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./vilagos.html">Világos</a></li>
+                    <li><a class="dropdown-item" href="./gyongyos.html">Gyöngyös</a></li>
+                    <li><a class="dropdown-item" href="./eger.html">Eger</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-                  
 
-                  
-                  
-                  
+      <section class="hero-section">
+        <div class="container">
+          <h1>HUNGARIAN SPRING</h1>
+          <p>EVERY WEEK NEW INFORMATON ABOUT OUR FIGHT FOR LIBERTY</p>
+        </div>
+      </section>
 
-                  </form>
+      <div class="container">
+        <div class="row">
+         
+          <div class="col-12">
+            <div class="news-cards-container">
+
+              <div class="news-card-container">
+                <div class="card news-card">
+                  <img src="./kepek/bathyan-hal.jpg" class="card-img-top" alt="Revolutionary Event">
+                  <div class="card-body">
+                    <h5 class="card-title">THE PRIME MINISTER HAS BEEN EXCETUTED!</h5>
+                    <p class="card-text">When we are writing this prime minsiter  <strong>Lajos Batthyány.</strong> has been captured, and excetued by the oprresing Habsburgs we must mourn as a nation, and in our hearts cointninue the fight that he led.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="news-card-container">
+                <div class="card news-card">
+                  <img src="./kepek/aradfoter1849.webp" class="card-img-top" alt="Petőfi Sándor">
+                  <div class="card-body">
+                    <h5 class="card-title">BLOODFIELD IN ARAD!</h5>
+                    <p class="card-text">In the city of Arad, our great generals has been hanged for treason, thire secreice and leading shall inspire us to never give up. We will remember them as the heroes who gave up there life for every hungarian, and in there honour we must mourn.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="news-card-container">
+                <div class="card news-card">
+                  <img src="./kepek/kossuth-usanyali.jpg" class="card-img-top" alt="The March of the Revolutionaries">
+                  <div class="card-body">
+                    <h5 class="card-title">KOSSUTH FLED THE COUNTRY</h5>
+                    <p class="card-text">The great <strong>Kossuth Lajos</strong>  has seccesfly escaped the hands of the tyrnt Haynau and now he is in the US to get internation support for the hungarian casue, we must support him and prepre our selfs for the countuaton of this war.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </nav>
+          </div>
+        </div>
+      </div>
     </main>
 
-
-
-
-
-
-
-
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
