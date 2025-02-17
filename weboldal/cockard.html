@@ -3,68 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Merriweather&display=swap" rel="stylesheet">
     <title>The Hungarian National Cockade</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
             padding: 0;
+            height: 100%; 
+            position: relative;
+            font-family: 'Playfair Display', serif;
+            font-size: large;
+            background-color: #f4f1e1;  
+            color: #3a3a3a;
+            
         }
         .container {
             max-width: 800px;
             margin: auto;
             padding: 20px;
+            position: relative;
+            z-index: 1;
         }
         h1 {
             text-align: center;
             margin-bottom: 20px;
         }
-        .image-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            margin-bottom: 20px;
-        }
-        .image-container img {
-            height: 200px;
-        }
         .main-image {
-            margin: 0 auto;
             display: block;
+            width: 25%; 
+            margin: 0 auto;
         }
-        .side-image {
-            position: absolute;
-            height: 150px;
-            top: 50%;
-            width: 250px;
-            height: 50px;
-            transform: translateY(-50%);
+        .flag {
+            position: fixed; 
+            top: 0;
+            bottom: 0;
+            width: 90px; 
+            display: flex; 
         }
-        .left-image {
-            left: -20%; 
+        .left-flag {
+            left: 0;
         }
-        .right-image {
-            right: -20%;
+        .right-flag {
+            right: 0;
+        }
+        .stripe {
+            height: 100%;
+            width: 33.33%; 
+        }
+        .red {
+            background-color: red;
+        }
+        .white {
+            background-color: white;
+        }
+        .green {
+            background-color: green;
         }
         p {
             text-align: justify;
             margin-bottom: 15px;
         }
+        hr{
+            color: brown;
+        }
     </style>
 </head>
 <body>
 
+    <div class="flag left-flag">
+        <div class="stripe red"></div>
+        <div class="stripe white"></div>
+        <div class="stripe green"></div>
+    </div>
+
     <div class="container">
         <h1>The Hungarian National Cockade: The Symbol of Resistance and Freedom</h1>
         
-        <div class="image-container">
-            <img src="/kepek/decor.png" alt="Left Image" class="side-image left-image">
-            <img src="/kepek/kokarda.png" alt="Hungarian National Cockade" class="main-image">
-            <img src="/kepek/decor.png" alt="Right Image" class="side-image right-image">
-        </div>
-
+        <hr>
+        <img src="/kepek/kokarda.png" alt="Hungarian National Cockade" class="main-image">
+        <hr>
         <p><strong>Budapest, Hungary</strong> - In the wake of the valiant struggles of the past year, the Hungarian National Cockade (<em>Magyar Nemzeti Kokkárda</em>) has become an enduring symbol of our people's unwavering fight for freedom. This tricolor ribbon, bearing the national colors of red, white, and green, was proudly worn by patriots who stood against oppression and sought independence from Habsburg rule.</p>
 
         <p>The tradition of wearing the cockade began during the early days of the revolution in March 1848, when our brave leaders, including <strong>Sándor Petőfi</strong> and <strong>Lajos Kossuth</strong>, donned it as a sign of unity and defiance. Inspired by the revolutionary spirit sweeping across Europe, Hungarians embraced this emblem as a mark of their dedication to the cause of liberty and national self-determination.</p>
@@ -74,6 +92,12 @@
         <p>The design itself followed the tradition of revolutionary cockades seen across Europe. The French, who had overthrown tyranny in their own revolution, had long worn a tricolor cockade, and other nations fighting for liberty had adopted similar symbols. But ours, bearing the sacred colors of Hungary, became something greater—it became the emblem of our own national awakening.</p>
 
         <p>Though our battle may have ended, the cockade stands as a testament to our nation's courage and our hope for a future shaped by the principles for which we fought.</p>
+    </div>
+
+    <div class="flag right-flag">
+        <div class="stripe red"></div>
+        <div class="stripe white"></div>
+        <div class="stripe green"></div>
     </div>
 
 </body>
