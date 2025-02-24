@@ -3,161 +3,167 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hungarian Spring</title>
+    <title>Hungarian Revolution of 1848</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <style>
       body {
-  font-family: Arial, sans-serif;
-}
+        font-family: 'Georgia', serif;
+        background-color: #f5f0e1;
+        color: #3b2f2f;
+        padding-top: 70px; /* Space for fixed navbar */
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background-color: #fff8dc;
+        padding: 20px;
+        border: 5px solid #8b5a2b;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+      h1 {
+        font-size: 36px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 24px;
+        color: #003366;
+        font-style: italic;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #3b2f2f;
+      }
+      img {
+        width: 100%;
+        max-width: 400px;
+        border: 3px solid #8b5a2b;
+        margin: 20px 0;
+      }
+      .navbar {
+        background-color: #003366;
+      }
+      .navbar-brand {
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+        font-size: 24px;
+      }
 
-h2, h3 {
-  color: #003366;
-}
-
-section {
-  margin-top: 80px;
-}
-
-.navbar {
-  background-color: #003366;
-}
-
-
-
+      .container-fluid {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+      }
     </style>
   </head>
   <body>
     <main>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Hungarian Revolution of 1848</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NEWS</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item dropdown"></li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="./index.html">Főoldal</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " aria-current="page" href="./martyrsofArad.html">The Martyrs of Arad</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./cockard.html">Cockard</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Influential important person
+      <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hungarian Revolution of 1848</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NEWS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item dropdown"></li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Főoldal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./martyrsofArad.html">The Martyrs of Arad</a>                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cockard.html">Cockard</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Influential important person
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" id="kossuthlajos-1" href="./kossuthlajos.html">Kossuth Lajos</a></li>
+                      <li><a class="dropdown-item" href="./deakferenc.html">Deák Ferenc</a></li>
+                      <li><a class="dropdown-item" href="./szechenyi.html"> gróf Széchenyi István</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      
+                      <li><a class="dropdown-item" href="./petofi.html">Petőfi Sándor</a></li>
+                      <li><a class="dropdown-item" href="./aranyJ.html">Arany János</a></li>
+                      <li><a class="dropdown-item" href="./kolcsey.html">Kölcsey Ferenc</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="./turulpeter.html"> Turul Péter</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Cities, towns, important places
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" id="kossuthlajos-1" href="./kossuthlajos.html">Kossuth Lajos</a></li>
-                        <li><a class="dropdown-item" href="./deakferenc.html">Deák Ferenc</a></li>
-                        <li><a class="dropdown-item" href="./szechenyi.html"> gróf Széchenyi István</a></li>
+                        <li><a class="dropdown-item" href="./budapest.html">Buda and Pest</a></li>
+                        <li><a class="dropdown-item" href="./pozsony.html">Pozsony</a></li>
+                        <li><a class="dropdown-item " href="./erdely.html">Erdély</a></li>
                         <li>
                           <hr class="dropdown-divider">
                         </li>
                         
-                        <li><a class="dropdown-item" href="./petofi.html">Petőfi Sándor</a></li>
-                        <li><a class="dropdown-item" href="./aranyJ.html">Arany János</a></li>
-                        <li><a class="dropdown-item" href="./kolcsey.html">Kölcsey Ferenc</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="./turulpeter.html"> Turul Péter</a></li>
+                        <li><a class="dropdown-item active" href="./vilagos.html">Világos</a></li>
+                        <li><a class="dropdown-item" href="./gyongyos.html">Gyöngyös</a></li>
+                        <li><a class="dropdown-item" href="./eger.html">Eger</a></li>
                       </ul>
                     </li>
+                </ul>
 
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Cities, towns, important places
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="./budapest.html">Buda and Pest</a></li>
-                          <li><a class="dropdown-item" href="./pozsony.html">Pozsony</a></li>
-                          <li><a class="dropdown-item" href="./erdely.html">Erdély</a></li>
-                          <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          
-                          <li><a class="dropdown-item active" href="./vilagos.html">Világos</a></li>
-                          <li><a class="dropdown-item" href="./gyongyos.html">Gyöngyös</a></li>
-                          <li><a class="dropdown-item" href="./eger.html">Eger</a></li>
-                        </ul>
-                      </li>
-                  </ul>
+                
 
-                  
-
-                  
-                  
-                  
-          
-                </div>
+                
+                
+                
+                
+                </form>
               </div>
             </div>
-          </nav>
-    </main>
-
-    
-          <section class="container mt-5 pt-5">
-            <div class="row">
-              <!-- Kép bal oldalon -->
-              <div class="col-md-4">
-                <img src="./kepek/Világosi_fegyverletétel.jpg" alt="Világosi Fegyverletétel" class="img-fluid">
-              </div>
-              <!-- Szöveg jobb oldalon -->
-              <div class="col-md-8">
-                <h2>The Surrender at Világos in 1849</h2>
-                <p>
-                  The surrender at Világos was the final, tragic event of the 1848/49 Hungarian Revolution, marking the end of Hungary's struggle for independence. On August 13, 1849, on the plains of Világos, the leader of the Hungarian army, Artúr Görgei, laid down his arms before the Russian and Austrian troops as part of the Világos Agreement.
-                </p>
-                
-                <p>
-                  As a result of the surrender, the Hungarian Revolution formally ended, and the Habsburg Empire restored its control over Hungary. This decision not only signified a military defeat but also represented a political and moral failure for the revolutionaries.
-                </p>
-                
-                <div class="row mt-4">
-                  <h3>The History of the Surrender at Világos</h3>
-                  <p>
-                    The final stage of the Revolution occurred in the summer of 1849. After suffering several defeats in battles against the Austrian and Russian armies, the situation became increasingly hopeless for the Hungarian forces. Artúr Görgei, the commander of the Hungarian army, and his troops retreated to the plains of Világos, where negotiations for surrender took place.
-                  </p>
-                
-                  <p>
-                    The decision, which meant the loss of independence and defeat, had huge moral and political consequences. After the surrender, the leaders of the revolution, such as Lajos Kossuth, fled, while Görgei and his men were taken prisoner. The surrender at Világos also marked the formal end of Hungary's fight for independence.
-                  </p>
-                
-                  <p>
-                    Following the event, difficult decades followed for the Hungarian nation until the fight for freedom flared up once again.
-                  </p>
-                </div>
-                
-            </div>
-          </section>
-    
-        </main>
-    
-
-    
+          </div>
+        </nav>
+  </main>
 
 
+    <div class="container">
+      <h1>Világos, 1849</h1>
+      <h2>The Surrender at Világos</h2>
+      <img src="./kepek/Világosi_fegyverletétel.jpg" alt="Világosi Fegyverletétel" class="img-fluid">
+      <div class="col-md-12">
+        <h3>The End of Hungary's Struggle for Independence</h3>
+        <p>
+          The surrender at Világos marked the final, tragic chapter of the 1848/49 Hungarian Revolution, bringing an end to Hungary's fight for independence. On August 13, 1849, Artúr Görgei, the Hungarian commander, laid down his arms to the Russian and Austrian forces on the plains of Világos.
+        </p>
 
+        <p>
+          This event signified not just a military defeat but the end of Hungary's aspirations for autonomy and a blow to the national pride of the Hungarian people. Following the surrender, the revolution collapsed, and Hungary was once again under the control of the Habsburg Empire.
+        </p>
 
+        <div class="row mt-4">
+          <h3>The History of the Surrender</h3>
+          <p>
+            After months of fierce fighting, the Hungarian forces were outnumbered and overwhelmed. With Artúr Görgei's decision to surrender at Világos, Hungary's revolution came to a bitter end, and its independence aspirations were dashed.
+          </p>
 
+          <p>
+            The leaders of the revolution, including Lajos Kossuth, fled the country, while many of the soldiers were taken prisoner. The events at Világos marked the beginning of difficult years for Hungary, which would only regain its momentum for independence in future struggles.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
